@@ -22,7 +22,7 @@
     <li><a href="#otel-yonetimi"> ➤ Uygulanan Aşıların Yönetimi</a></li>
     <li><a href="#oda-yonetimi"> ➤ Randevu Yönetimi</a></li>
     <li><a href="#rezervasyon-islemleri"> ➤ Veteriner Doktor Yönetimi</a></li>
-     <li><a href="#rezervasyon-islemleri"> ➤ Doktorların Müsait Günlerinin Yönetimi</a></li>
+     <li><a href="#rezervasyonn-islemleri"> ➤ Doktorların Müsait Günlerinin Yönetimi</a></li>
     <li><a href="#sistem-gorselleri"> ➤ Program İçi Görseller</a></li>
     <li><a href="#iletisim"> ➤ İletişim</a></li>
   </ol>
@@ -234,7 +234,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- RESERVATION OPERATIONS -->
-<h2 id="rezervasyon-islemleri"> :clipboard: Doktorların Müsait Günlerinin Yönetimi</h2>
+<h2 id="rezervasyonn-islemleri"> :clipboard: Doktorların Müsait Günlerinin Yönetimi</h2>
 
 <p align="justify">
 * Doktorların müsait günlerini ekleme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
