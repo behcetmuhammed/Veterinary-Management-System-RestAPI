@@ -56,7 +56,7 @@ public class CustomerManager implements ICustomerService {
             return new ResponseEntity<>(hashMap, HttpStatus.FOUND);
         }
         hashMap.put("Status", false);
-        hashMap.put("Message", "Customer Not Found!");
+        hashMap.put("Message", "Müşteri (Hayvan Sahibi) Bulunamadı!");
         return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
     }
 
@@ -68,15 +68,15 @@ public class CustomerManager implements ICustomerService {
             if(hasCustomer) {
                 customerRepo.deleteById(id);
                 hashMap.put("Status", true);
-                hashMap.put("Message", "Customer has been deleted!");
+                hashMap.put("Message", "Müşteri (Hayvan Sahibi) silindi!");
                 return new ResponseEntity<>(hashMap, HttpStatus.OK);
             }
             hashMap.put("Status", false);
-            hashMap.put("Message", "Customer Not Found!");
+            hashMap.put("Message", "Müşteri (Hayvan Sahibi) bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         } catch (Exception exception) {
             hashMap.put("Status", false);
-            hashMap.put("Error", "Customer could not be deleted!");
+            hashMap.put("Error", "Müşteri (Hayvan Sahibi) silinemedi!");
             return new ResponseEntity<>(hashMap, HttpStatus.BAD_REQUEST);
         }
     }
@@ -89,15 +89,15 @@ public class CustomerManager implements ICustomerService {
             if(optionalCustomer.isPresent()) {
                 customerRepo.saveAndFlush(customer);
                 hashMap.put("Status", true);
-                hashMap.put("Message", "Customer has been updated!");
+                hashMap.put("Message", "Müşteri (Hayvan Sahibi) güncellendi!");
                 return new ResponseEntity<>(hashMap, HttpStatus.OK);
             }
             hashMap.put("Status", false);
-            hashMap.put("Message", "Customer Not Found!");
+            hashMap.put("Message", "Müşteri (Hayvan Sahibi) bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         } catch (Exception exception) {
             hashMap.put("Status", false);
-            hashMap.put("Error", "Customer could not be updated!");
+            hashMap.put("Error", "Müşteri (Hayvan Sahibi) güncellenemedi!");
             return new ResponseEntity<>(hashMap, HttpStatus.BAD_REQUEST);
         }
     }
@@ -116,7 +116,7 @@ public class CustomerManager implements ICustomerService {
             return new ResponseEntity<>(hashMap, HttpStatus.FOUND);
         }
         hashMap.put("Status", false);
-        hashMap.put("Message", "Customer(s) Not Found!");
+        hashMap.put("Message", "Müşteri(ler) (Hayvan Sahibi(leri)) Bulunamadı!");
         return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
     }
 
@@ -134,7 +134,7 @@ public class CustomerManager implements ICustomerService {
             return new ResponseEntity<>(hashMap, HttpStatus.FOUND);
         }
         hashMap.put("Status", false);
-        hashMap.put("Message", "Customer(s) Not Found!");
+        hashMap.put("Message", "Müşteri(ler) (Hayvan Sahibi(leri)) Bulunamadı!");
         return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
     }
 
@@ -148,12 +148,12 @@ public class CustomerManager implements ICustomerService {
         HashMap<String, Object> hashMap = new HashMap<>();
         if(customerRepo.findById(id).isEmpty()){
             hashMap.put("Status", false);
-            hashMap.put("Message", "Customer Not Found!");
+            hashMap.put("Message", "Müşteri (Hayvan Sahibi) Bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         }
         if(getId(id).getAnimals().isEmpty()){
             hashMap.put("Status", false);
-            hashMap.put("Message", "Customer Not Found!");
+            hashMap.put("Message", "Müşteri (Hayvan Sahibi) Bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         }
         hashMap.put("Status", true);
