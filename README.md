@@ -189,33 +189,55 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- USER MANAGEMENT -->
-<h2 id="kullanici-yonetimi"> :busts_in_silhouette: Kullanıcı Yönetimi</h2>
+<h2 id="kullanici-yonetimi"> :busts_in_silhouette: Hayvanların ve Sahiplerinin (customer) Yönetimi</h2>
 
 <p align="justify">
-Sistemde iki ana kullanıcı türü bulunur: Yönetici ve Acenta Çalışanı. Yönetici kullanıcıları, sistem üzerinde geniş yetkilere sahiptirler ve acenta çalışanlarını listeleme, ekleme, silme, güncelleme gibi işlemleri gerçekleştirebilirler. Ayrıca, kullanıcıları rollerine göre filtreleyebilirler. Acenta çalışanları ise otel ve oda yönetimi, dönem yönetimi ve fiyat yönetimi gibi işlevlere erişerek müşteri rezervasyonları üzerinde işlem yapabilirler.
+  
+* Hayvanları kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
+* Hayvan sahiplerini kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
+* Hayvan sahipleri isme göre filtrelenecek şekilde API endpoint oluşturuldu.
+* Hayvanlar isme göre filtrelenecek şekilde API endpoint oluşturuldu.
+* Hayvan sahibinin sistemde kayıtlı tüm hayvanlarını görüntülemek için API endpoint oluşturuldu. Hayvan sahibine göre hayvanlara filtreleme yapılabilir.
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- HOTEL MANAGEMENT -->
-<h2 id="otel-yonetimi"> :hotel: Otel Yönetimi</h2>
+<h2 id="otel-yonetimi"> :hotel: Uygulanan Aşıların Yönetimi</h2>
 
 <p align="justify">
-Patika Turizm Acentesi'nin anlaşmalı olduğu otellerin yönetimi için tasarlanmış olan Otel Yönetimi modülü, acenta çalışanlarının otel listeleme ve yeni otel ekleme işlemlerini gerçekleştirmesini sağlar. Her otel kaydında otelin adı, adresi, e-posta adresi, telefon numarası, yıldız sayısı ve otelin sunduğu tesis özellikleri gibi bilgiler bulunur. Ayrıca, otellere ait pansiyon tipleri ve dönem bilgileri de bu modül üzerinden yönetilerek fiyatlandırma ve rezervasyon süreçleri için gerekli altyapı oluşturulur.
+* Hayvanlara uygulanan aşıları kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
+* Eğer hastaya ait aynı tip aşının (adı ve kodu aynı olan aşı) aşı koruyuculuk bitiş tarihi daha gelmemiş ise sisteme yeni aşı girilememesi sağlandı. Aşı kodlarından ve aşı bitiş tarihlerinden bu kontrol yapıldı.
+* Hayvan id’sine göre belirli bir hayvana ait tüm aşı kayıtlarını listelemek için gerekli API endpoint oluşturuldu.
+* Kullanıcının aşı koruyuculuk bitiş tarihi yaklaşan hayvanları listeleyebilmesi için gireceği başlangıç ve bitiş tarihlerine göre aşı koruyuculuk bitiş tarihi bu aralıkta olan aşıları hayvan bilgileriyle birlikte listesini geri döndüren API endpoint oluşturuldu.
 </p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- ROOM MANAGEMENT -->
-<h2 id="oda-yonetimi"> :door: Oda Yönetimi</h2>
+<h2 id="oda-yonetimi"> :door: Randevu Yönetimi</h2>
 
 <p align="justify">
-Oda Yönetimi modülü, acenta çalışanlarının otellerdeki odaları yönetmelerini sağlar. Bu modül sayesinde odaların listelenmesi, yeni odaların eklenmesi ve odaların otel adı, şehir veya belirli bir tarihe göre aranması mümkündür. Oda kaydı sırasında, odanın tipi (tek kişilik, çift kişilik, suit vb.), oda özellikleri (yatak sayısı, televizyon, minibar, oyun konsolu vb.), oda fiyatı ve oda stoğu gibi bilgiler girilir.
+* Hayvanların aşı ve muayene randevularının oluşturulması, bilgilerinin güncellenmesi, görüntülenmesi ve silinmesi işlemleri tamamlandı.
+* Randevular sisteme tarih ve saat içerecek şekilde kaydedilmekte olup, LocalDateTime kullanılmaktadır.
+* Hayvanların her türlü muayenesi için doktorlardan uygun tarihlerde ve saatlerde randevu oluşturulmakta; her doktor için sadece saat başı randevu oluşturulabilmektedir. Bir muayenenin sabit olarak bir saat süreceği kabul edilmiştir.
+* Randevu kaydı oluşturulurken doktorun girilen tarihte müsait olup olmadığı ve girilen saatte başka bir randevusu olup olmadığı kontrol edilmekte; her iki durum şartı sağlanırsa randevu oluşturulmakta, şart sağlanmazsa "Doktor bu tarihte çalışmamaktadır! /Girilen saatte başka bir randevu mevcuttur." gibi hata mesajı fırlatılmaktadır. Custom exception oluşturulmuştur.
+* Randevular kullanıcı tarafından girilen tarih aralığına ve doktora göre filtrelenebilmekte; buna ait API endpoint oluşturulmuştur. (Randevu için kliniği arayan müşterilerin doktor ve gün taleplerinde uygunluk olup olmadığını sorgulamak için kullanılacaktır.) Jpa’nın findBy between kullanımı sağlanmıştır.
+* Randevular kullanıcı tarafından girilen tarih aralığına ve hayvana göre filtrelenebilmekte; buna ait API endpoint oluşturulmuştur. Jpa’nın findBy between kullanımı sağlanmıştır.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- RESERVATION OPERATIONS -->
-<h2 id="rezervasyon-islemleri"> :clipboard: Rezervasyon İşlemleri</h2>
+<h2 id="rezervasyon-islemleri"> :clipboard: Veteriner Doktor Yönetimi</h2>
 
 <p align="justify">
-Rezervasyon İşlemleri modülü, acenta çalışanlarının müşteri hizmetlerini hızlı ve etkili bir şekilde sunmalarını sağlar. Rezervasyon yapılırken müşteri iletişim bilgileri ve misafir bilgileri sisteme girilir. Bu bilgilere göre toplam fiyat otomatik olarak hesaplanır. Acenta çalışanları rezervasyonları listeleyebilir, güncelleyebilir ve silebilirler. Rezervasyon tamamlandığında, ilgili odanın stoğu otomatik olarak bir azalır.
+* Veteriner doktorların kaydedilmesi, bilgilerinin güncellenmesi, görüntülenmesi ve silinmesi işlemi yapıldı.
+</p>
+
+![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<!-- RESERVATION OPERATIONS -->
+<h2 id="rezervasyon-islemleri"> :clipboard: Doktorların Müsait Günlerinin Yönetimi</h2>
+
+<p align="justify">
+* Doktorların müsait günlerini ekleme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
+* Doktorun çalıştığı günler sisteme LocalDate olarak kaydedilmekte; sadece tarih bilgisi bulunmaktadır. Saat, dakika, saniye bilgisi yer almamaktadır.
 </p>
 
 
