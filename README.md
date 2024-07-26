@@ -132,6 +132,7 @@ Projede kullanılan teknolojiler:
 
 [![made-with-java](https://img.shields.io/badge/Made%20with-Java-green.svg)](https://www.java.com/tr/) <br>
 [![made-with-Swing](https://img.shields.io/badge/Made%20with-SpringBoot-red.svg)](https://start.spring.io/) <br>
+[![made-with-Swing](https://img.shields.io/badge/Made%20with-SpringDataJPA-green.svg)](https://start.spring.io/) <br>
 [![made-with-SQL](https://img.shields.io/badge/Made%20with-Postman-orange.svg)](https://www.postman.com/) <br>
 [![made-with-SQL](https://img.shields.io/badge/Made%20with-PostgreSQL-blue.svg)](https://www.mysql.com/) <br>
 [![made-with-ide](https://img.shields.io/badge/IntelliJ%20IDEA%20%2F%20Eclipse%20%2F%20Herhangi%20bir%20Java%20-IDE-blue.svg)](https://www.python.org/) <br>
@@ -146,13 +147,13 @@ Projede kullanılan teknolojiler:
 Projeyi  klonlamak ve çalıştırmak için aşağıdaki adımları takip edin:
 
 ```bash
-git clone https://github.com/behcetmuhammed/tourism-agency-system-gp.git
-cd tourism-agency-system-gp
+git clone https://github.com/behcetmuhammed/Veterinary-Management-System-RestAPI.git
+cd Veterinary-Management-System-RestAPI
 ```
-Projeyi IDE'nizde açın ve `App` sınıfını çalıştırın.
+Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 </p>
 
-<h3 id="kurulum"> :warning: Uyarı: Bu proje, `JDK 18 Amazon Corretto 18.0.2` ile uyumludur. Lütfen bu JDK sürümünü kullanarak projeyi çalıştırın.</h3>
+<h3 id="kurulum"> :warning: Uyarı: Bu proje, `JDK 18 Amazon Corretto 18.0.2` ile uyumludur. Lütfen bu JDK sürümünü kullanarak projeyi çalıştırın. Ayırca language level'i 17-Sealed types, always-strict floating-point semantics olarak ayarlayın</h3>
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
