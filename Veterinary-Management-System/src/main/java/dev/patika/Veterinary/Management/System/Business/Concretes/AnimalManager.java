@@ -59,7 +59,7 @@ public class AnimalManager implements IAnimalService {
             return new ResponseEntity<>(hashMap, HttpStatus.FOUND);
         }
         hashMap.put("Status", false);
-        hashMap.put("Message", "Record Not Found!");
+        hashMap.put("Message", "Kayıt bulunamadı!");
         return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
     }
 
@@ -73,15 +73,15 @@ public class AnimalManager implements IAnimalService {
             if(hasAnimal) {
                 animalRepo.deleteById(id);
                 hashMap.put("Status", true);
-                hashMap.put("Message", "Record has been deleted!");
+                hashMap.put("Message", "Kayıt silindi!");
                 return new ResponseEntity<>(hashMap, HttpStatus.OK);
             }
             hashMap.put("Status", false);
-            hashMap.put("Message", "Record Not Found!");
+            hashMap.put("Message", "Kayıt bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         } catch (Exception exception) {
             hashMap.put("Status", false);
-            hashMap.put("Error", "Record could not be deleted!");
+            hashMap.put("Error", "Kayıt silinemedi!");
             return new ResponseEntity<>(hashMap, HttpStatus.BAD_REQUEST);
         }
     }
@@ -96,15 +96,15 @@ public class AnimalManager implements IAnimalService {
             if(optionalAnimal.isPresent()) {
                 animalRepo.saveAndFlush(animal);
                 hashMap.put("Status", true);
-                hashMap.put("Message", "Record has been updated!");
+                hashMap.put("Message", "Kayıt güncellendi!");
                 return new ResponseEntity<>(hashMap, HttpStatus.OK);
             }
             hashMap.put("Status", false);
-            hashMap.put("Message", "Record Not Found!");
+            hashMap.put("Message", "Kayıt bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         } catch (Exception exception) {
             hashMap.put("Status", false);
-            hashMap.put("Error", "Record could not be updated!");
+            hashMap.put("Error", "Kayıt güncellenemedi!");
             return new ResponseEntity<>(hashMap, HttpStatus.BAD_REQUEST);
         }
     }
@@ -125,7 +125,7 @@ public class AnimalManager implements IAnimalService {
             return new ResponseEntity<>(hashMap, HttpStatus.FOUND);
         }
         hashMap.put("Status", false);
-        hashMap.put("Message", "Record Not Found!");
+        hashMap.put("Message", "Kayıt bulunamadı!");
         return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
     }
 
@@ -145,7 +145,7 @@ public class AnimalManager implements IAnimalService {
             return new ResponseEntity<>(hashMap, HttpStatus.FOUND);
         }
         hashMap.put("Status", false);
-        hashMap.put("Message", "Record Not Found!");
+        hashMap.put("Message", "Kayıt bulunamadı!");
         return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
     }
 
@@ -158,7 +158,7 @@ public class AnimalManager implements IAnimalService {
         List<AnimalResponse> converted = new ArrayList<>();
         if(animalList.isEmpty()){
             hashMap.put("Status", false);
-            hashMap.put("Message", "Record Not Found!");
+            hashMap.put("Message", "Kayıt bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         }
         hashMap.put("Status", true);
@@ -178,7 +178,7 @@ public class AnimalManager implements IAnimalService {
         List<AnimalResponse> converted = new ArrayList<>();
         if(animals.isEmpty()){
             hashMap.put("Status", false);
-            hashMap.put("Message", "Records Not Found!");
+            hashMap.put("Message", "Kayıtlar Bulunamadı!");
             return new ResponseEntity<>(hashMap, HttpStatus.NOT_FOUND);
         }
         hashMap.put("Status", true);

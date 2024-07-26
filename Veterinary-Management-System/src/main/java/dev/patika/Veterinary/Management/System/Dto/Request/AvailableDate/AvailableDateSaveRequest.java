@@ -16,5 +16,5 @@ public class AvailableDateSaveRequest {
     private LocalDate availableDate;
 
     @NonNull
-    private AvailableDateDoctorRequest doctor_id;
+    private AvailableDateDoctorRequest doctor_id; //Müsait Tarih Doktor Talebi (Doktorun müsati olduğu tarih)
 }
