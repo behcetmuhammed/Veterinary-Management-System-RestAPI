@@ -18,7 +18,7 @@
     <li><a href="#proje-ozeti"> ➤ Proje Özeti</a></li>
     <li><a href="#teknolojiler"> ➤ Kullanılan Teknolojiler</a></li>
     <li><a href="#kurulum"> ➤ Kurulum ve Başlatma</a></li>
-    <li><a href="#kullanici-yonetimi"> ➤ Hayvanların ve Sahiplerinin (customer) Yönetimi</a></li>
+    <li><a href="#hayvan-yonetimi"> ➤ Hayvanların ve Sahiplerinin (customer) Yönetimi</a></li>
     <li><a href="#otel-yonetimi"> ➤ Uygulanan Aşıların Yönetimi</a></li>
     <li><a href="#oda-yonetimi"> ➤ Randevu Yönetimi</a></li>
     <li><a href="#rezervasyon-islemleri"> ➤ Veteriner Doktor Yönetimi</a></li>
@@ -190,7 +190,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- USER MANAGEMENT -->
-<h2 id="kullanici-yonetimi"> :busts_in_silhouette: Hayvanların ve Sahiplerinin (customer) Yönetimi</h2>
+<h2 id="hayvan-yonetimi"> :busts_in_silhouette: Hayvanların ve Sahiplerinin (customer) Yönetimi</h2>
 
 <p align="justify">
   
