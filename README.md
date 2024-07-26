@@ -116,6 +116,7 @@
 ## API Temel Özellikleri
 
 ### Hayvanların ve Sahiplerinin Yönetimi
+
 ~~~~~~
 - Hayvanları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
 - Hayvan sahiplerini kaydetme, bilgilerini güncelleme, görüntüleme ve silme
@@ -125,6 +126,7 @@
 ~~~~~~
 
 ### Uygulanan Aşıların Yönetimi
+
 ~~~~~~
 - Hayvanlara uygulanan aşıları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
 - Aynı tip aşının koruyuculuk süresi dolmamışsa yeni aşı kaydedememe
@@ -162,11 +164,11 @@ Projede kullanılan teknolojiler:
 [![made-with-Swing](https://img.shields.io/badge/Made%20with-SpringBoot-red.svg)](https://start.spring.io/) <br>
 [![made-with-Swing](https://img.shields.io/badge/Made%20with-SpringDataJPA-green.svg)](https://start.spring.io/) <br>
 [![made-with-Swing](https://img.shields.io/badge/Made%20with-SpringMVC-blue.svg)](https://start.spring.io/) <br>
-[![made-with-Swing](https://img.shields.io/badge/Made%20with-Lombok-ClaretRed.svg)](https://start.spring.io/) <br>
-[![made-with-Swing](https://img.shields.io/badge/Made%20with-ModelMapper-blue.svg)](https://start.spring.io/) <br>
-[![made-with-Swing](https://img.shields.io/badge/Made%20with-Maven-turquoise.svg)](https://start.spring.io/) <br>
+[![made-with-Swing](https://img.shields.io/badge/Made%20with-Lombok-ClaretRed.svg)](https://www.java.com/tr/) <br>
+[![made-with-Swing](https://img.shields.io/badge/Made%20with-ModelMapper-blue.svg)](https://www.java.com/tr/) <br>
+[![made-with-Swing](https://img.shields.io/badge/Made%20with-Maven-turquoise.svg)](https://www.java.com/tr/) <br>
 [![made-with-SQL](https://img.shields.io/badge/Made%20with-Postman-orange.svg)](https://www.postman.com/) <br>
-[![made-with-SQL](https://img.shields.io/badge/Made%20with-PostgreSQL-blue.svg)](https://www.mysql.com/) <br>
+[![made-with-SQL](https://img.shields.io/badge/Made%20with-PostgreSQL-blue.svg)](https://www.postgresql.org/) <br>
 [![made-with-ide](https://img.shields.io/badge/IntelliJ%20IDEA%20%2F%20Eclipse%20%2F%20Herhangi%20bir%20Java%20-IDE-blue.svg)](https://www.python.org/) <br>
 
 </p>
