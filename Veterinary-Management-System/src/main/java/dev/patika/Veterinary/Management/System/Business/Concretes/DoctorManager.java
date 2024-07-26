@@ -32,17 +32,17 @@ public class DoctorManager implements IDoctorService {
         try {
             if(doctorRepo.existsByMailOrPhone(doctor.getMail(),doctor.getPhone())){
                 hashMap.put("Status", false);
-                hashMap.put("Message", "Existing Record!");
+                hashMap.put("Message", "Mevcut Kayıt!");
                 return new ResponseEntity<>(hashMap, HttpStatus.ALREADY_REPORTED);
             }
             doctorRepo.save(doctor);
             hashMap.put("Status", true);
-            hashMap.put("Message", "Doctor Created!");
+            hashMap.put("Message", "Doktor Oluşturuldu!");
             hashMap.put("Result", modelMapperService.forResponse().map(doctor, DoctorResponse.class));
             return new ResponseEntity<>(hashMap, HttpStatus.CREATED);
         } catch (Exception exception) {
             hashMap.put("Status", false);
-            hashMap.put("Error", "Doctor could not be saved!");
+            hashMap.put("Error", "Doktor Kaydedilemedi!");
             return new ResponseEntity<>(hashMap, HttpStatus.BAD_REQUEST);
         }
     }
