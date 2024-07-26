@@ -19,10 +19,10 @@
     <li><a href="#teknolojiler"> ➤ Kullanılan Teknolojiler</a></li>
     <li><a href="#kurulum"> ➤ Kurulum ve Başlatma</a></li>
     <li><a href="#hayvan-yonetimi"> ➤ Hayvanların ve Sahiplerinin (customer) Yönetimi</a></li>
-    <li><a href="#otel-yonetimi"> ➤ Uygulanan Aşıların Yönetimi</a></li>
-    <li><a href="#oda-yonetimi"> ➤ Randevu Yönetimi</a></li>
-    <li><a href="#rezervasyon-islemleri"> ➤ Veteriner Doktor Yönetimi</a></li>
-     <li><a href="#rezervasyonn-islemleri"> ➤ Doktorların Müsait Günlerinin Yönetimi</a></li>
+    <li><a href="#ası-yonetimi"> ➤ Uygulanan Aşıların Yönetimi</a></li>
+    <li><a href="#randevu-yonetimi"> ➤ Randevu Yönetimi</a></li>
+    <li><a href="#veteriner-doktor-yonetimi"> ➤ Veteriner Doktor Yönetimi</a></li>
+     <li><a href="#musait-gun-yonetimi"> ➤ Doktorların Müsait Günlerinin Yönetimi</a></li>
     <li><a href="#sistem-gorselleri"> ➤ Program İçi Görseller</a></li>
     <li><a href="#iletisim"> ➤ İletişim</a></li>
   </ol>
@@ -203,7 +203,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- HOTEL MANAGEMENT -->
-<h2 id="otel-yonetimi"> :hotel: Uygulanan Aşıların Yönetimi</h2>
+<h2 id="ası-yonetimi"> :hotel: Uygulanan Aşıların Yönetimi</h2>
 
 <p align="justify">
 * Hayvanlara uygulanan aşıları kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
@@ -214,7 +214,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- ROOM MANAGEMENT -->
-<h2 id="oda-yonetimi"> :door: Randevu Yönetimi</h2>
+<h2 id="randevu-yonetimi"> :door: Randevu Yönetimi</h2>
 
 <p align="justify">
 * Hayvanların aşı ve muayene randevularının oluşturulması, bilgilerinin güncellenmesi, görüntülenmesi ve silinmesi işlemleri tamamlandı.
@@ -226,7 +226,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- RESERVATION OPERATIONS -->
-<h2 id="rezervasyon-islemleri"> :clipboard: Veteriner Doktor Yönetimi</h2>
+<h2 id="veteriner-doktor-yonetimi"> :clipboard: Veteriner Doktor Yönetimi</h2>
 
 <p align="justify">
 * Veteriner doktorların kaydedilmesi, bilgilerinin güncellenmesi, görüntülenmesi ve silinmesi işlemi yapıldı.
@@ -234,7 +234,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- RESERVATION OPERATIONS -->
-<h2 id="rezervasyonn-islemleri"> :clipboard: Doktorların Müsait Günlerinin Yönetimi</h2>
+<h2 id="musait-gun-yonetimi"> :clipboard: Doktorların Müsait Günlerinin Yönetimi</h2>
 
 <p align="justify">
 * Doktorların müsait günlerini ekleme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
