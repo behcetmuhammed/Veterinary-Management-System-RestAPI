@@ -6,7 +6,7 @@
 <br/>
 
 <p align="center"> 
-  <img src="Pictures/Veterinary-Management-System-UML.png" alt="Sistem Ana Görseli" width="60%" height="30%">
+  <img src="Pictures/Veterinary-Management-System-UML.png" alt="Sistem Ana Görseli" width="100%" height="50%">
 </p>
 
 <!-- TABLE OF CONTENTS -->
@@ -39,12 +39,89 @@
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- PROJECT OVERVIEW -->
-<h2 id="proje-ozeti"> :mag_right: Proje Özeti</h2>
+<h2 id="proje-ozeti"> :mag_right: Proje Özellikleri</h2>
 
 <p align="justify"> 
-Patika Turizm Acentesi'nin yeni yönetim sistemi, turizm sektöründe faaliyet gösteren işletmelerin günlük operasyonlarını daha verimli hale getirmeyi hedefliyor. Sistem, otel rezervasyon süreçlerini optimize ederek, acentenin müşteri taleplerine hızlı ve etkili bir şekilde yanıt vermesine olanak tanıyor. Hem yönetici hem de acente çalışanı olmak üzere iki farklı kullanıcı profili bulunuyor ve her bir kullanıcı tipinin sistem üzerinde belirli yetkileri var.
-Patika Turizm Acentesi'nin yönetim sistemi, otel ve oda yönetimi, dönemsel fiyatlandırma ayarları, oda arama ve rezervasyon işlemleri gibi temel işlevleri dijital ortamda sağlayarak, acentenin işlerini kolaylaştırıyor ve operasyonel süreçlerini daha etkin bir şekilde yönetmelerine olanak sağlıyor.
+Özellikler:
 </p>
+
+- Veteriner Doktorları Kaydetme
+- Doktorların Çalışma Günlerini Kaydetme
+- Müşterileri Kaydetme
+- Müşterilere Ait Hayvanları Kaydetme
+- Hayvanlara Uygulanan Aşıları Kaydetme
+- Hayvanlar İçin Veteriner Hekimlere Randevu Oluşturma
+- Randevuların Yönetimi
+
+## Entity Sınıfları
+
+### Animal
+- id: Long
+- name: String
+- species: String
+- breed: String
+- gender: String
+- colour: String
+- dateOfBirth: LocalDate
+
+### Customer
+- id: Long
+- name: String
+- phone: String
+- mail: String
+- address: String
+- city: String
+
+### Vaccine
+- id: Long
+- name: String
+- code: String
+- protectionStartDate: LocalDate
+- protectionFinishDate: LocalDate
+
+### Doctor
+- id: Long
+- name: String
+- phone: String
+- mail: String
+- address: String
+- city: String
+
+### AvailableDate
+- id: Long
+- availableDate: LocalDate
+
+### Appointment
+- id: Long
+- appointmentDate: LocalDateTime
+
+## API Temel Özellikleri
+
+### Hayvanların ve Sahiplerinin Yönetimi
+- Hayvanları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
+- Hayvan sahiplerini kaydetme, bilgilerini güncelleme, görüntüleme ve silme
+- Hayvan sahiplerini isme göre filtreleme
+- Hayvanları isme göre filtreleme
+- Hayvan sahibine göre hayvanları listeleme
+
+### Uygulanan Aşıların Yönetimi
+- Hayvanlara uygulanan aşıları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
+- Aynı tip aşının koruyuculuk süresi dolmamışsa yeni aşı kaydedememe
+- Hayvan id’sine göre aşı kayıtlarını listeleme
+- Aşı koruyuculuk bitiş tarihi belirli aralıkta olan hayvanları listeleme
+
+### Randevu Yönetimi
+- Randevuları oluşturma, güncelleme, görüntüleme ve silme
+- Randevuları tarih ve saat içerecek şekilde kaydetme
+- Doktorların müsait günlerinde ve saatlerinde randevu oluşturma
+- Randevuları tarih aralığına ve doktora göre filtreleme
+- Randevuları tarih aralığına ve hayvana göre filtreleme
+
+### Veteriner Doktor Yönetimi
+- Veteriner doktorları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
+
+### Doktorların Müsait Günlerinin Yönetimi
+- Doktorların müsait günlerini ekleme, bilgilerini güncelleme, görüntüleme ve silme
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- USED TECHNOLOGIES -->
@@ -54,8 +131,9 @@ Patika Turizm Acentesi'nin yönetim sistemi, otel ve oda yönetimi, dönemsel fi
 Projede kullanılan teknolojiler:
 
 [![made-with-java](https://img.shields.io/badge/Made%20with-Java-green.svg)](https://www.java.com/tr/) <br>
-[![made-with-Swing](https://img.shields.io/badge/Made%20with-Swing-red.svg)](https://www.java.com/tr/) <br>
-[![made-with-SQL](https://img.shields.io/badge/Made%20with-SQL-blue.svg)](https://www.mysql.com/) <br>
+[![made-with-Swing](https://img.shields.io/badge/Made%20with-SpringBoot-red.svg)](https://start.spring.io/) <br>
+[![made-with-SQL](https://img.shields.io/badge/Made%20with-Postman-orange.svg)](https://www.postman.com/) <br>
+[![made-with-SQL](https://img.shields.io/badge/Made%20with-PostgreSQL-blue.svg)](https://www.mysql.com/) <br>
 [![made-with-ide](https://img.shields.io/badge/IntelliJ%20IDEA%20%2F%20Eclipse%20%2F%20Herhangi%20bir%20Java%20-IDE-blue.svg)](https://www.python.org/) <br>
 
 </p>
