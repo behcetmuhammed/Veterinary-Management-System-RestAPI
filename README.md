@@ -45,6 +45,8 @@
 Özellikler:
 </p>
 
+~~~~~~
+
 - Veteriner Doktorları Kaydetme
 - Doktorların Çalışma Günlerini Kaydetme
 - Müşterileri Kaydetme
@@ -53,9 +55,13 @@
 - Hayvanlar İçin Veteriner Hekimlere Randevu Oluşturma
 - Randevuların Yönetimi
 
+~~~~~~
+
 ## Entity Sınıfları
 
 ### Animal
+
+~~~~~~
 - id: Long
 - name: String
 - species: String
@@ -63,65 +69,86 @@
 - gender: String
 - colour: String
 - dateOfBirth: LocalDate
+~~~~~~
 
 ### Customer
+~~~~~~
 - id: Long
 - name: String
 - phone: String
 - mail: String
 - address: String
 - city: String
+~~~~~~
 
 ### Vaccine
+~~~~~~
 - id: Long
 - name: String
 - code: String
 - protectionStartDate: LocalDate
 - protectionFinishDate: LocalDate
+~~~~~~
 
 ### Doctor
+~~~~~~
 - id: Long
 - name: String
 - phone: String
 - mail: String
 - address: String
 - city: String
+~~~~~~
 
 ### AvailableDate
+~~~~~~
 - id: Long
 - availableDate: LocalDate
+~~~~~~
 
 ### Appointment
+~~~~~~
 - id: Long
 - appointmentDate: LocalDateTime
+~~~~~~
 
 ## API Temel Özellikleri
 
 ### Hayvanların ve Sahiplerinin Yönetimi
+~~~~~~
 - Hayvanları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
 - Hayvan sahiplerini kaydetme, bilgilerini güncelleme, görüntüleme ve silme
 - Hayvan sahiplerini isme göre filtreleme
 - Hayvanları isme göre filtreleme
 - Hayvan sahibine göre hayvanları listeleme
+~~~~~~
 
 ### Uygulanan Aşıların Yönetimi
+~~~~~~
 - Hayvanlara uygulanan aşıları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
 - Aynı tip aşının koruyuculuk süresi dolmamışsa yeni aşı kaydedememe
 - Hayvan id’sine göre aşı kayıtlarını listeleme
 - Aşı koruyuculuk bitiş tarihi belirli aralıkta olan hayvanları listeleme
+~~~~~~
 
 ### Randevu Yönetimi
+~~~~~~
 - Randevuları oluşturma, güncelleme, görüntüleme ve silme
 - Randevuları tarih ve saat içerecek şekilde kaydetme
 - Doktorların müsait günlerinde ve saatlerinde randevu oluşturma
 - Randevuları tarih aralığına ve doktora göre filtreleme
 - Randevuları tarih aralığına ve hayvana göre filtreleme
+~~~~~~
 
 ### Veteriner Doktor Yönetimi
+~~~~~~
 - Veteriner doktorları kaydetme, bilgilerini güncelleme, görüntüleme ve silme
+~~~~~~
 
 ### Doktorların Müsait Günlerinin Yönetimi
+~~~~~~
 - Doktorların müsait günlerini ekleme, bilgilerini güncelleme, görüntüleme ve silme
+~~~~~~
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- USED TECHNOLOGIES -->
