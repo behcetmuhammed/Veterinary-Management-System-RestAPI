@@ -41,7 +41,7 @@
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- VİDEO -->
-<h2 id="proje-ozeti-video-kaydı"> :video_camera: Proje de yer alan API End-Pointlerini anlatım dökümanı için aşağıdaki linke tıklayınız:</h2>
+<h2 id="proje-ozeti-video-kaydı"> :book: Proje de yer alan API End-Pointlerini anlatım dökümanı için aşağıdaki linke tıklayınız:</h2>
 
 <p>
 ✤ <a href="https://drive.google.com/file/d/1p_tFcJIKv-flfz7vTUN5IN-o-4HXMx4y/view">Döküman Linki</a> <br>
