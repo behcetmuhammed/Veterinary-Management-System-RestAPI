@@ -273,7 +273,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ### Available-Dates Tablosu
 
-![](Pictures/available-dates .png)
+![](Pictures/available-dates.png)
 
 ### Vaccines Tablosu
 
