@@ -18,10 +18,11 @@
     <li><a href="#proje-ozeti"> ➤ Proje Özeti</a></li>
     <li><a href="#teknolojiler"> ➤ Kullanılan Teknolojiler</a></li>
     <li><a href="#kurulum"> ➤ Kurulum ve Başlatma</a></li>
-    <li><a href="#kullanici-yonetimi"> ➤ Kullanıcı Yönetimi</a></li>
-    <li><a href="#otel-yonetimi"> ➤ Otel Yönetimi</a></li>
-    <li><a href="#oda-yonetimi"> ➤ Oda Yönetimi</a></li>
-    <li><a href="#rezervasyon-islemleri"> ➤ Rezervasyon İşlemleri</a></li>
+    <li><a href="#kullanici-yonetimi"> ➤ Hayvanların ve Sahiplerinin (customer) Yönetimi</a></li>
+    <li><a href="#otel-yonetimi"> ➤ Uygulanan Aşıların Yönetimi</a></li>
+    <li><a href="#oda-yonetimi"> ➤ Randevu Yönetimi</a></li>
+    <li><a href="#rezervasyon-islemleri"> ➤ Veteriner Doktor Yönetimi</a></li>
+     <li><a href="#rezervasyon-islemleri"> ➤ Doktorların Müsait Günlerinin Yönetimi</a></li>
     <li><a href="#sistem-gorselleri"> ➤ Program İçi Görseller</a></li>
     <li><a href="#iletisim"> ➤ İletişim</a></li>
   </ol>
