@@ -1,4 +1,7 @@
 package dev.patika.Veterinary.Management.System.Dao;
 
-public interface DoctorRepo {
+import dev.patika.Veterinary.Management.System.Entities.Doctor;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface DoctorRepo  extends JpaRepository<Doctor, Long> {
 }

@@ -19,7 +19,4 @@ public interface AnimalRepo extends JpaRepository<Animal, Long> { //Animal'ın I
             String gender,
             String color,
             LocalDate dateOfBirth);*/
-    /*dwdw
-
-     */
 }
