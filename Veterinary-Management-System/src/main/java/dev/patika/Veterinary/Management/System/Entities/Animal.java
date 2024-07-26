@@ -35,7 +35,7 @@ public class Animal { //Hayvan Sınıfı
     private LocalDate dateOfBirth; //Doğum Tarihi
 
 
-    //Daha sonra ENUM olarak ayarla
+//    Daha sonra ENUM olarak ayarla
 //    @Column(name = "animal_gender", nullable = false)
 //    @Enumerated(EnumType.STRING)
 //    private Gender gender;

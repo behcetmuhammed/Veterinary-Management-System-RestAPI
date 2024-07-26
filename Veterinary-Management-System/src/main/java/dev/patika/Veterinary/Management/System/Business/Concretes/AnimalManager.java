@@ -27,21 +27,22 @@ public class AnimalManager implements IAnimalService {
     @Override
     public ResponseEntity addAnimal(Animal animal) {
         HashMap<String, Object> hashMap = new HashMap<>();
-        Animal hasAnimal = animalRepo.findByNameAndSpeciesAndBreedAndGenderAndColorAndDateOfBirth(animal.getName(), animal.getSpecies(), animal.getBreed(), animal.getGender(), animal.getColor(), animal.getDateOfBirth());
+        Animal hasAnimal = animalRepo.findByNameAndSpeciesAndBreedAndGenderAndColorAndDateOfBirth(
+                animal.getName(), animal.getSpecies(), animal.getBreed(), animal.getGender(), animal.getColor(), animal.getDateOfBirth());
         try {
             if(hasAnimal != null) {
                 hashMap.put("Status", false);
-                hashMap.put("Message", "Existing Record!");
+                hashMap.put("Message", "Mevcut Kayıt!");
                 return new ResponseEntity<>(hashMap, HttpStatus.ALREADY_REPORTED);
             }
             AnimalResponse result = modelMapperService.forResponse().map(animalRepo.save(animal), AnimalResponse.class);
             hashMap.put("Status", true);
-            hashMap.put("Message", "Record Created!");
+            hashMap.put("Message", "Kayıt Oluşturuldu!");
             hashMap.put("Result", result);
             return new ResponseEntity<>(hashMap, HttpStatus.CREATED);
         } catch (Exception exception) {
             hashMap.put("Status", false);
-            hashMap.put("Error", "Record could not be saved!");
+            hashMap.put("Error", "Kayıt kaydedilemedi!");
             return new ResponseEntity<>(hashMap, HttpStatus.BAD_REQUEST);
         }
     }
