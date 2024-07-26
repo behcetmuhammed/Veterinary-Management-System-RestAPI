@@ -153,7 +153,7 @@ cd Veterinary-Management-System-RestAPI
 Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 </p>
 
-<h3 id="kurulum"> :warning: Uyarı: Bu proje, `JDK 18 Amazon Corretto 18.0.2` ile uyumludur. Lütfen bu JDK sürümünü kullanarak projeyi çalıştırın. Ayırca language level'i 17-Sealed types, always-strict floating-point semantics olarak ayarlayın</h3>
+<h3 id="kurulum"> :warning: Uyarı: Bu proje, `JDK 18 Amazon Corretto 18.0.2` ile uyumludur. Lütfen bu JDK sürümünü kullanarak projeyi çalıştırın. Ayırca language level seçeneğini `17-Sealed types, always-strict floating-point semantics` olarak ayarlayın</h3>
 
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
