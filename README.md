@@ -194,31 +194,25 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 <!-- USER MANAGEMENT -->
 <h2 id="hayvan-yonetimi"> :busts_in_silhouette: Hayvanların ve Sahiplerinin (customer) Yönetimi</h2>
 
-<p align="justify">
-  
 * Hayvanları kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
 * Hayvan sahiplerini kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
 * Hayvan sahipleri isme göre filtrelenecek şekilde API endpoint oluşturuldu.
 * Hayvanlar isme göre filtrelenecek şekilde API endpoint oluşturuldu.
 * Hayvan sahibinin sistemde kayıtlı tüm hayvanlarını görüntülemek için API endpoint oluşturuldu. Hayvan sahibine göre hayvanlara filtreleme yapılabilir.
-</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- HOTEL MANAGEMENT -->
 <h2 id="ası-yonetimi"> :hotel: Uygulanan Aşıların Yönetimi</h2>
 
-<p align="justify">
 * Hayvanlara uygulanan aşıları kaydetme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
 * Eğer hastaya ait aynı tip aşının (adı ve kodu aynı olan aşı) aşı koruyuculuk bitiş tarihi daha gelmemiş ise sisteme yeni aşı girilememesi sağlandı. Aşı kodlarından ve aşı bitiş tarihlerinden bu kontrol yapıldı.
 * Hayvan id’sine göre belirli bir hayvana ait tüm aşı kayıtlarını listelemek için gerekli API endpoint oluşturuldu.
 * Kullanıcının aşı koruyuculuk bitiş tarihi yaklaşan hayvanları listeleyebilmesi için gireceği başlangıç ve bitiş tarihlerine göre aşı koruyuculuk bitiş tarihi bu aralıkta olan aşıları hayvan bilgileriyle birlikte listesini geri döndüren API endpoint oluşturuldu.
-</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- ROOM MANAGEMENT -->
 <h2 id="randevu-yonetimi"> :door: Randevu Yönetimi</h2>
 
-<p align="justify">
 * Hayvanların aşı ve muayene randevularının oluşturulması, bilgilerinin güncellenmesi, görüntülenmesi ve silinmesi işlemleri tamamlandı.
 * Randevular sisteme tarih ve saat içerecek şekilde kaydedilmekte olup, LocalDateTime kullanılmaktadır.
 * Hayvanların her türlü muayenesi için doktorlardan uygun tarihlerde ve saatlerde randevu oluşturulmakta; her doktor için sadece saat başı randevu oluşturulabilmektedir. Bir muayenenin sabit olarak bir saat süreceği kabul edilmiştir.
@@ -230,19 +224,14 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 <!-- RESERVATION OPERATIONS -->
 <h2 id="veteriner-doktor-yonetimi"> :clipboard: Veteriner Doktor Yönetimi</h2>
 
-<p align="justify">
 * Veteriner doktorların kaydedilmesi, bilgilerinin güncellenmesi, görüntülenmesi ve silinmesi işlemi yapıldı.
-</p>
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 <!-- RESERVATION OPERATIONS -->
 <h2 id="musait-gun-yonetimi"> :clipboard: Doktorların Müsait Günlerinin Yönetimi</h2>
 
-<p align="justify">
 * Doktorların müsait günlerini ekleme, bilgilerini güncelleme, görüntüleme ve silme işlemleri tamamlandı.
 * Doktorun çalıştığı günler sisteme LocalDate olarak kaydedilmekte; sadece tarih bilgisi bulunmaktadır. Saat, dakika, saniye bilgisi yer almamaktadır.
-</p>
-
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
