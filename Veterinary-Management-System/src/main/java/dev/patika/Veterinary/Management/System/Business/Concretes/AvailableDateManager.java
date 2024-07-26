@@ -2,7 +2,7 @@ package dev.patika.Veterinary.Management.System.Business.Concretes;
 
 import dev.patika.Veterinary.Management.System.Business.Abstruct.IAvailableDateService;
 import dev.patika.Veterinary.Management.System.Core.Config.ModalMapper.ModelMapperService;
-import dev.patika.Veterinary.Management.System.Dao.AppoinmentRepo;
+import dev.patika.Veterinary.Management.System.Dao.AppointmentRepo;
 import dev.patika.Veterinary.Management.System.Dao.AvailableDateRepo;
 import dev.patika.Veterinary.Management.System.Dao.DoctorRepo;
 import dev.patika.Veterinary.Management.System.Dto.Response.AvailableDate.AvailableDateResponse;
@@ -23,7 +23,7 @@ public class AvailableDateManager implements IAvailableDateService {
 
     private final AvailableDateRepo availableDateRepo;
     private final DoctorRepo doctorRepo;
-    private final AppoinmentRepo appointmentRepo;
+    private final AppointmentRepo appointmentRepo;
     private final ModelMapperService modelMapperService;
 
 

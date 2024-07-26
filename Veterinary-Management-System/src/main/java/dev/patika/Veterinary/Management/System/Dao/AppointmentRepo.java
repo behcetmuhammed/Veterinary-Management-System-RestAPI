@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 @Repository
-public interface AppoinmentRepo extends JpaRepository<Appointment, Long> {
+public interface AppointmentRepo extends JpaRepository<Appointment, Long> {
 
     List<Appointment> findByAppointmentDateBetween(LocalDate startDate, LocalDate endDate);
     boolean existsByAppointmentDateBetween(LocalDateTime startDate, LocalDateTime endDate);
