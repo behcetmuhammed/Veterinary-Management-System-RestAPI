@@ -269,7 +269,7 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 ### Appointments Tablosu
 
-![](Pictures/Appointments.png)
+![](Pictures/appointments.png)
 
 ### Available-Dates Tablosu
 
