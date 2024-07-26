@@ -34,12 +34,16 @@ public class Animal { //Hayvan Sınıfı
     @Temporal(TemporalType.DATE)
     private LocalDate dateOfBirth; //Doğum Tarihi
 
+
+    //Daha sonra ENUM olarak ayarla
+//    @Column(name = "animal_gender", nullable = false)
+//    @Enumerated(EnumType.STRING)
+//    private Gender gender;
+//    public enum Gender {
+//        MALE, FEMALE
+//    }
     @Column(name = "animal_gender", nullable = false)
-    @Enumerated(EnumType.STRING)
-    private Gender gender;
-    public enum Gender {
-        MALE, FEMALE
-    }
+    private String gender;
 
     //Animal (x)<=>(1) Customer  //Bir hayvanın sadece bir müşterisi olur, ancak müşterinin birden fazla hayvanı olabilir.
     @ManyToOne(fetch = FetchType.EAGER)
