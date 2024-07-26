@@ -249,76 +249,33 @@ Projeyi IDE'nizde açın ve `VmsApplication` sınıfını çalıştırın.
 
 <p align="justify"> 
 
-### Login Ekranı
+### Postman Genel Gösterim
 
-<p>
-Kullanıcı adı ve şifre girildikten sonra, sistem tarafından aşağıdaki şekilde yönlendirilirsiniz:
-  
-- Eğer admin kullanıcı adı ve şifresi girildiyse, **Admin Paneli** ne giriş yapılır.
-- Eğer çalışan kullanıcı adı ve şifresi girildiyse, **Çalışan Paneli**ne giriş yapılır.
-</p>
+![](Pictures/postman.png)
 
-1)
-![](pictures/Login.png)
+### Animals Tablosu
 
-### Admin Paneli 
-<p>Admin ve Çalışan Listesi:</p>
+![](Pictures/animals.png)
 
-1)
-![](pictures/User.png)
+### Customer Tablosu
 
-<p>
-  Yeni kullanıcı eklemek, mevcut kullanıcıyı güncellemek veya silmek için:
-  
-- İşlem yapmak istediğiniz kullanıcıyı seçmek için kullanıcı satırına sağ veya sol tıklayın.
-- Açılan pop-up menüden ilgili işlemi (Ekle, Güncelle veya Sil) seçin.
-</p>
+![](Pictures/customers.png)
 
-2)
-![](pictures/PopUpUser.png)
+### Doctors Tablosu
 
-<p>
-Yeni kullanıcı ekleme paneli
-</p>
+![](Pictures/doctors.png)
 
-3)
-![](pictures/AddUser.png)
+### Appointments Tablosu
 
-### Otel Yönetimi
-1)
-![](pictures/Employee.png)
+![](Pictures/Appointments.png)
 
-2)
-![](pictures/AddPension.png)
+### Available-Dates Tablosu
 
-3)
-![](pictures/AddHotel.png)
+![](Pictures/available-dates .png)
 
-### Pansiyon Yönetimi
-1)
-![](pictures/PensionManagement.png)
+### Vaccines Tablosu
 
-### Sezon Yönetimi
-1)
-![](pictures/SeasonManagement.png)
-
-### Oda Yönetimi
-1)
-![](pictures/Room.png)
-
-### Rezervasyon İşlemleri
-1)
-![](pictures/Reservation.png)
-
-### Validasyonlar
-1)
-![](pictures/Filter.png)
-
-2)
-![](pictures/Fil1.png)
-
-</p>
-
+![](Pictures/vaccines.png)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
